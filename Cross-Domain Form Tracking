@@ -1,0 +1,40 @@
+<script>
+  /* 
+   * Cross-Domain Form Tracking in Google Tag Manager
+   * Important to load this script max. 30 seconds before the form gets submitted, as the linker-object is valid for a limited time
+   * Idea by Simo Ahava https://www.simoahava.com/analytics/iframe-cross-domain-tracking-in-google-tag-manager/
+   * Modified by github.com/underlines
+   * Example form elemet used: <form id= "booking_form" action="https:/example.net/path/?" method="post">
+  */
+  try { 
+    //get the google analytics object
+    var gobj = window[window.GoogleAnalyticsObject];
+    
+    //define the object to modify the src/action using "CSS Selector Helper" for Chrome
+    var linkingObject = document.querySelector('form#booking_form');
+    
+    var tracker, linker;
+    if (gobj) {
+      //get first tracker object
+      tracker = gobj.getAll()[0];
+      
+      //If you have multiple google analytics trackers, set a custom ga tracker name, then use it below. Refer to: https://developers.google.com/analytics/devguides/collection/analyticsjs/creating-trackers
+      //tracker = gobj.getByName("trackerName");
+      
+      //initiate ga plugin linker for the default tracker
+      linker = new window.gaplugins.Linker(tracker);
+
+      //remove trailing ? from URL
+      linkingObject.action = linkingObject.action.replace(/\?$/g, "");
+      
+      //add ga cookie as url parameter
+      linkingObject.action = linker.decorate(linkingObject.action);
+      
+      //add & for further POST parameter of the form
+      linkingObject.action = linkingObject.action + "&";
+    }
+  }
+  catch(e){
+    console.log("GTM script error: " + e + "/n" + "Tag name: <<name of your tag>>");
+  }
+</script>
