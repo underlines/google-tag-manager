@@ -1,0 +1,56 @@
+<script>
+  /* 
+   * Ajax Event Tracking with jQuery, in Google Tag Manager, for all ajax events and especially
+   * for ajax forms that don't propagate the form success event.
+   * It will only be compatible with AJAX calls made via jQuery ($.ajax, .load() and similar).
+   * AJAX requests made via pure Javascript or using other methods will not be detected.
+   * For non jQuery events use the ajax-event-tracking-vanilla example instead.
+   *
+   * Idea by http://aukera.co.uk/blog/tracking-ajax-events-gtm/#gtm-ajax-6-tracking-js
+   * Modified by https:://github.com/underlines
+   * Version 2017-07-20 UTC 10:17
+  */
+  
+ /* STEP 1
+  * Create new variable:
+  * Name:                       eventCategory
+  * Type:                       Data Layer Variable
+  * Data Layer Variable Name:   eventCategory
+ */
+ /* STEP 2
+  * Create new variable:
+  * Name:                       eventAction
+  * Type:                       Data Layer Variable
+  * Data Layer Variable Name:   eventAction
+ */
+ /* STEP 3
+  * Create new variable:
+  * Name:                       eventLabel
+  * Type:                       Data Layer Variable
+  * Data Layer Variable Name:   eventLabel
+ */
+ /* STEP 4
+  * Create new trigger
+  * Name:              gtm.dom
+  * Choose Event:      Page View
+  * Configure Trigger: DOM Ready
+  * Fire On:           All Page Views
+ */
+ /* STEP 5
+  * Create new tag
+  * Type:   Custom HTML
+  * HTML:   Content below
+  * Trigger: gtm.dom
+  * Don't forget <script> tags
+ */
+  (function($) {
+    $(document).ajaxSuccess(function( event, xhr, settings ) {
+      dataLayer.push({
+        'event': 'ajaxSuccess',
+        'eventCategory': 'AJAX',
+        'eventAction': settings.url,
+        'eventLabel': xhr.responseText
+      });
+    });
+  })(jQuery);
+</script>
