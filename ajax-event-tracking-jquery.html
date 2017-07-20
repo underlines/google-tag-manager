@@ -53,4 +53,26 @@
       });
     });
   })(jQuery);
+ /* STEP 6
+  * Create new event
+  * Name:                 ajaxEvents
+  * Type:                 Custom Event
+  * Fire on:  Event name: ajaxSucces
+ */
+ /* STEP 7
+  * Create new tag
+  * Type:       Universal Analytics
+  * Track Type: Event
+  * Category:   {{eventCategory}}
+  * Action:     {{eventAction}}
+  * Label:      {{eventLabel}}
+  * Fire On:    ajaxEvents
+  *
+  * Note: This is an example. You should not fire on all ajaxEvents,
+  * so after recognizing the particular event you want to measure,
+  * adapt the rule to your trigger on step 6 and don't fire on all events.
+  * Also note that in most cases you don't want to send the whole ajax
+  * request as a eventLabel, so either process it with another javascript
+  * variable, don't send it at all, or know exactly what you're doing.
+ */
 </script>
