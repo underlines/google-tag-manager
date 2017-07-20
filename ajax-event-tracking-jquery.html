@@ -40,10 +40,12 @@
  /* STEP 5
   * Create new tag
   * Type:   Custom HTML
-  * HTML:   Content below
+  * HTML:   Use variant with or without get/post parameters below
   * Trigger: gtm.dom
   * Don't forget <script> tags
  */
+  
+  // Without get/post parameters
   (function($) {
     $(document).ajaxSuccess(function( event, xhr, settings ) {
       dataLayer.push({
@@ -54,6 +56,19 @@
       });
     });
   })(jQuery);
+  
+  // With get/post parameters
+  (function($) {
+    $(document).ajaxSuccess(function( event, xhr, settings ) {
+      dataLayer.push({
+        'event': 'ajaxSuccess',
+        'eventCategory': 'AJAX ' + settings.type,
+        'eventAction': settings.url + (settings.type == 'POST' && settings.data ? ';' + settings.data : ''),
+        'eventLabel': xhr.responseText
+      });
+    });
+  })(jQuery);
+  
  /* STEP 6
   * Create new event
   * Name:                 ajaxEvents
