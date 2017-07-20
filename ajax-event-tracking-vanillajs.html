@@ -1,0 +1,98 @@
+<script>
+  /* 
+   * Ajax Event Tracking without jQuery, in Google Tag Manager, for all ajax events and especially
+   * for ajax forms, modal windows, popups and confirmation dialogs,
+   * that don't propagate form success event or new page loads.
+   * It will only be compatible with AJAX calls in pure javascript (XMLHttpRequest).
+   * AJAX requests made via jquery ($.ajax, .load() and similar) will not be detected.
+   * For jQuery events use the ajax-event-tracking-jquery example instead.
+   *
+   * Idea by http://aukera.co.uk/blog/tracking-ajax-events-gtm/#gtm-ajax-6-tracking-js
+   * Modified by https:://github.com/underlines
+   * Version 2017-07-20 UTC 10:17
+   *
+   * Notes from aureka.co.uk:
+   * The script directly patches the native XMLHttpRequest.send() function, so it’ll
+   * be compatible with any browser that uses it and any script or library whose
+   * AJAX functionality depends on it.
+   * For greater compatibility, rather than depend on the OnStateChange property
+   * of the request, it directly monitors its status, which makes it compatible
+   * with almost all AJAX requests – including those made by jQuery (which wouldn’t
+   * otherwise work as they bypass OnStateChange and use their own callbacks instead).
+   * If you have any problems, try increasing the wait time for the setTimeout call.
+  */
+  
+ /* STEP 1
+  * Create new variable:
+  * Name:                       eventCategory
+  * Type:                       Data Layer Variable
+  * Data Layer Variable Name:   eventCategory
+ */
+ /* STEP 2
+  * Create new variable:
+  * Name:                       eventAction
+  * Type:                       Data Layer Variable
+  * Data Layer Variable Name:   eventAction
+ */
+ /* STEP 3
+  * Create new variable:
+  * Name:                       eventLabel
+  * Type:                       Data Layer Variable
+  * Data Layer Variable Name:   eventLabel
+ */
+ /* STEP 4
+  * Create new trigger
+  * Name:              gtm.dom
+  * Choose Event:      Page View
+  * Configure Trigger: DOM Ready
+  * Fire On:           All Page Views
+ */
+ /* STEP 5
+  * Create new tag
+  * Type:   Custom HTML
+  * HTML:   Content below
+  * Trigger: gtm.dom
+  * Don't forget <script> tags
+ */
+(function() {
+	var xhrSend = window.XMLHttpRequest.prototype.send;
+	window.XMLHttpRequest.prototype.send = function() {
+		var xhr = this;
+		var intervalId = window.setInterval(function() {
+			if(xhr.readyState != 4) {
+				return;
+			}
+			dataLayer.push({
+				'event': 'ajaxSuccess',
+				'eventCategory': 'AJAX',
+				'eventAction': xhr.responseURL,
+				'eventLabel': xhr.responseText
+			});
+			clearInterval(intervalId);
+		}, 1);
+		return xhrSend.apply(this, [].slice.call(arguments));
+	};
+})();
+ /* STEP 6
+  * Create new event
+  * Name:                 ajaxEvents
+  * Type:                 Custom Event
+  * Fire on:  Event name: ajaxSucces
+ */
+ /* STEP 7
+  * Create new tag
+  * Type:       Universal Analytics
+  * Track Type: Event
+  * Category:   {{eventCategory}}
+  * Action:     {{eventAction}}
+  * Label:      {{eventLabel}}
+  * Fire On:    ajaxEvents
+  *
+  * Note: This is an example. You should not fire on all ajaxEvents,
+  * so after recognizing the particular event you want to measure,
+  * adapt the rule to your trigger on step 6 and don't fire on all events.
+  * Also note that in most cases you don't want to send the whole ajax
+  * request as a eventLabel, so either process it with another javascript
+  * variable, don't send it at all, or know exactly what you're doing.
+ */
+</script>
