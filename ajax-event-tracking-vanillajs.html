@@ -50,22 +50,52 @@
  /* STEP 5
   * Create new tag
   * Type:   Custom HTML
-  * HTML:   Content below
+  * HTML:   Choose either the script with or without post/get parameters
   * Trigger: gtm.dom
   * Don't forget <script> tags
  */
+  
+ //With post/get parameters
 (function() {
+        var xhrSend = window.XMLHttpRequest.prototype.send;
+        window.XMLHttpRequest.prototype.send = function() {
+                var xhr = this;
+                var intervalId = window.setInterval(function() {
+                        if(xhr.readyState != 4) {
+                                return;
+                        }
+                        dataLayer.push({
+                                'event': 'ajaxSuccess',
+                                'eventCategory': 'AJAX',
+                                'eventAction': xhr.responseURL,
+                                'eventLabel': xhr.responseText
+                        });
+                        clearInterval(intervalId);
+                }, 1);
+                return xhrSend.apply(this, [].slice.call(arguments));
+        };
+})();
+
+ //With post/get parameters
+(function() {
+	var xhrOpen = window.XMLHttpRequest.prototype.open;
 	var xhrSend = window.XMLHttpRequest.prototype.send;
+	window.XMLHttpRequest.prototype.open = function() {
+		this.method = arguments[0];
+		this.url = arguments[1];
+		return xhrOpen.apply(this, [].slice.call(arguments));
+	};
 	window.XMLHttpRequest.prototype.send = function() {
 		var xhr = this;
+		var xhrData = arguments[0];
 		var intervalId = window.setInterval(function() {
 			if(xhr.readyState != 4) {
 				return;
 			}
 			dataLayer.push({
 				'event': 'ajaxSuccess',
-				'eventCategory': 'AJAX',
-				'eventAction': xhr.responseURL,
+				'eventCategory': 'AJAX ' + xhr.method,
+				'eventAction': xhr.url + (xhr.method == 'POST' && xhrData ? ';' + xhrData : ''),
 				'eventLabel': xhr.responseText
 			});
 			clearInterval(intervalId);
@@ -73,6 +103,7 @@
 		return xhrSend.apply(this, [].slice.call(arguments));
 	};
 })();
+  
  /* STEP 6
   * Create new event
   * Name:                 ajaxEvents
