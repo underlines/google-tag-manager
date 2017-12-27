@@ -7,7 +7,7 @@
 var links = document.getElementsByTagName('a');
 for(var i = 0; i<links.length; i++){
     var link = links[i];
-    if(link.hasAttribute('href')){                  // "https://www2.lpt.co.th/en/clkg/tel/020262127" "https://www2.lpt.co.th/en/clkg/https/www.zipeventapp.com/e/LPT-PP22-Buy-3-PLATINUM-get-1-PLATINUM?ref=HERO"
+    if(link.hasAttribute('href')){ // before: "https://www.landinpage.com/en/clkg/tel/020262127" after: "tel:020262127"
         var newLink = link.href
         .replace(/.*\/clk(g|n)\/https\//gi,'https://')
         .replace(/.*\/clk(g|n)\/http\//gi,'http://')
