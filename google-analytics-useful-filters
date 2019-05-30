@@ -1,0 +1,27 @@
+1. DELETE TRAILING SPACES
+==================================
+
+Description:
+This regex can be used in Google Analytics Advanced Filters to clean
+the Request URI field. This prevents several entries of the same URL
+once with and once without trailing spaces being visible in Google
+Analytics' Page dimension.
+
+
+REGEX: ^((\/[^\/]+)+)\/?$|^(\/)$
+
+Following example strings should extract without change:
+/
+/aaa
+/aaa.html
+/a/b/ccc
+/a/b/ccc.html
+/a/b/ccc.html?a=b&c=d
+
+Following example strings should extract without trailing slash:
+/aaa/
+/aaa.html/
+/a/b/ccc/
+/a/b/ccc.html/
+/a/b/ccc.html/?a=b&c=d
+
