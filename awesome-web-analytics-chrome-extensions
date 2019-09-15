@@ -1,50 +1,74 @@
-Curated list of Web Analytics plugins.
+#Curated list of Web Analytics plugins.
 Biased towards google products.
 
-https://chrome.google.com/webstore/detail/facebook-pixel-helper/fdgfkebogiimcoedlicjlajpkdmockpc
+##Google Analytics
 
-https://chrome.google.com/webstore/detail/analytics-pros-datalayer/kmcbdogdandhihllalknlcjfpdjcleom
+[Tag Assistant (by Google)](https://chrome.google.com/webstore/detail/tag-assistant-by-google/kejbdjndbnbjgmefkgdddjlbokphdefk)
 
-https://chrome.google.com/webstore/detail/datalayer-checker/ffljdddodmkedhkcjhpmdajhjdbkogke
+[Da Vinci Tools](https://chrome.google.com/webstore/detail/da-vinci-tools/pekljbkpgnpphbkgjbfgiiclemodfpen)
 
-https://chrome.google.com/webstore/detail/tag-assistant-by-google/kejbdjndbnbjgmefkgdddjlbokphdefk
+[Google Analytics Debugger](https://chrome.google.com/webstore/detail/google-analytics-debugger/jiokjpcfnipnicblkgdklknjjeohnfln)
 
-https://chrome.google.com/webstore/detail/web-developer-form-filler/gbagmkohmhcjgbepncmehejaljoclpil
+[Google Analytics Logger](https://chrome.google.com/webstore/detail/google-analytics-logger/mnocefeloijpdenhbidaoildegppmkoi)
 
-https://chrome.google.com/webstore/detail/gtm-sonar/iiihoahkpncaheicjfemhjkkfamcahcd
+[Enhanced Google Analytics](https://chrome.google.com/webstore/detail/enhanced-google-analytics/damoaceajjhenadgpppcccgmanobikjh)
 
-https://chrome.google.com/webstore/detail/tag-manager-injector/ooninanccdmjbcmghimhdfpeklpmlllg
+[Google Analytics Debugger](https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna)
 
-https://chrome.google.com/webstore/detail/redirect-path/aomidfkchockcldhbkggjokdkkebmdll
+[Statistical Test for Google Analytics](https://chrome.google.com/webstore/detail/statistical-test-for-goog/jdijbhedpeoddlmcbooapojknnfkengj)
 
-https://chrome.google.com/webstore/detail/gtm-copy-paste/mhhidgiahbopjapanmbflpkcecpciffa
+[Google Analytics and Segment Helper by VICE](https://chrome.google.com/webstore/detail/google-analytics-and-segm/ppknjgihbmfcdmgdenblfomidfomhclp)
 
-https://chrome.google.com/webstore/detail/waspinspector-analytics-s/niaoghengfohplclhbjnjheodgkejpih
+##Facebook
 
-https://chrome.google.com/webstore/detail/da-vinci-tools/pekljbkpgnpphbkgjbfgiiclemodfpen
+[Facebook Pixel Helper](https://chrome.google.com/webstore/detail/facebook-pixel-helper/fdgfkebogiimcoedlicjlajpkdmockpc)
 
-https://chrome.google.com/webstore/detail/tealium-tools/gidnphnamcemailggkemcgclnjeeokaa
+##Google Tag Manager
 
-https://chrome.google.com/webstore/detail/gtmga-debug/ilnpmccnfdjdjjikgkefkcegefikecdc
+[Analytics Pros - dataLayer Inspector+](https://chrome.google.com/webstore/detail/analytics-pros-datalayer/kmcbdogdandhihllalknlcjfpdjcleom)
 
-https://chrome.google.com/webstore/detail/dataslayer/ikbablmmjldhamhcldjjigniffkkjgpo
+[Datalayer Checker](https://chrome.google.com/webstore/detail/datalayer-checker/ffljdddodmkedhkcjhpmdajhjdbkogke)
 
-https://chrome.google.com/webstore/detail/google-analytics-debugger/jiokjpcfnipnicblkgdklknjjeohnfln
+[GTM Sonar](https://chrome.google.com/webstore/detail/gtm-sonar/iiihoahkpncaheicjfemhjkkfamcahcd)
 
-https://chrome.google.com/webstore/detail/google-analytics-logger/mnocefeloijpdenhbidaoildegppmkoi
+[Tag Manager Injector](https://chrome.google.com/webstore/detail/tag-manager-injector/ooninanccdmjbcmghimhdfpeklpmlllg)
 
-https://chrome.google.com/webstore/detail/gtm-datalayer-sifter/loaechmlaojdaklndmhapgkdnldjadbo
+[GTM/GA Debugger](https://chrome.google.com/webstore/detail/gtmga-debug/ilnpmccnfdjdjjikgkefkcegefikecdc)
 
-https://chrome.google.com/webstore/detail/gtm-analyzer/ilnfchepijhkabokmioefeeoaidlifdp
+[GTM Copy Paste](https://chrome.google.com/webstore/detail/gtm-copy-paste/mhhidgiahbopjapanmbflpkcecpciffa)
 
-https://chrome.google.com/webstore/detail/dataslayer/ikbablmmjldhamhcldjjigniffkkjgpo
+[DataSlayer](https://chrome.google.com/webstore/detail/dataslayer/ikbablmmjldhamhcldjjigniffkkjgpo)
 
-https://chrome.google.com/webstore/detail/enhanced-google-analytics/damoaceajjhenadgpppcccgmanobikjh
+[GTM Datalayer Sifter](https://chrome.google.com/webstore/detail/gtm-datalayer-sifter/loaechmlaojdaklndmhapgkdnldjadbo)
 
-https://chrome.google.com/webstore/detail/google-analytics-debugger/jnkmfdileelhofjcijamephohjechhna
+[GTM Analyzer](https://chrome.google.com/webstore/detail/gtm-analyzer/ilnfchepijhkabokmioefeeoaidlifdp)
 
-https://chrome.google.com/webstore/detail/archieai-google-analytics/dehldelopfcidgmfdbgaljofaemkkjcg
+## Multiple Tag Vendors
 
-https://chrome.google.com/webstore/detail/statistical-test-for-goog/jdijbhedpeoddlmcbooapojknnfkengj
+[WASP Analytics Profiler](https://chrome.google.com/webstore/detail/waspinspector-analytics-s/niaoghengfohplclhbjnjheodgkejpih)
 
-https://chrome.google.com/webstore/detail/google-analytics-and-segm/ppknjgihbmfcdmgdenblfomidfomhclp
+[Tealium Tools](https://chrome.google.com/webstore/detail/tealium-tools/gidnphnamcemailggkemcgclnjeeokaa)
+
+##Helpful
+
+[Web Developer Form Filler](https://chrome.google.com/webstore/detail/web-developer-form-filler/gbagmkohmhcjgbepncmehejaljoclpil)
+
+[Redirect Path](https://chrome.google.com/webstore/detail/redirect-path/aomidfkchockcldhbkggjokdkkebmdll)
+
+[Archie.AI Google Analytics](https://chrome.google.com/webstore/detail/archieai-google-analytics/dehldelopfcidgmfdbgaljofaemkkjcg)
+
+##Web resources
+
+[Google Analytics Reporting API Query Explorer](https://ga-dev-tools.appspot.com/query-explorer/)
+
+[Google Analytics Measurement Protocol Hit Builder](https://ga-dev-tools.appspot.com/hit-builder/)
+
+[Google Analytics Dimensions & Metrics Explorer](https://ga-dev-tools.appspot.com/dimensions-metrics-explorer/)
+
+[Google Analytics UTM Builder](https://ga-dev-tools.appspot.com/campaign-url-builder/)
+
+[Google Analytics Enhanced Ecommerce Implementation with GTM](https://developers.google.com/tag-manager/enhanced-ecommerce)
+
+
+[Google Analytics Enhanced Ecommerce Demo Shop](https://enhancedecommerce.appspot.com/)
+
