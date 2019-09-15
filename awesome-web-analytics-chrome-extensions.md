@@ -1,7 +1,7 @@
-#Curated list of Web Analytics plugins.
+# Curated list of Web Analytics plugins.
 Biased towards google products.
 
-##Google Analytics
+## Google Analytics
 
 [Tag Assistant (by Google)](https://chrome.google.com/webstore/detail/tag-assistant-by-google/kejbdjndbnbjgmefkgdddjlbokphdefk)
 
@@ -19,11 +19,11 @@ Biased towards google products.
 
 [Google Analytics and Segment Helper by VICE](https://chrome.google.com/webstore/detail/google-analytics-and-segm/ppknjgihbmfcdmgdenblfomidfomhclp)
 
-##Facebook
+## Facebook
 
 [Facebook Pixel Helper](https://chrome.google.com/webstore/detail/facebook-pixel-helper/fdgfkebogiimcoedlicjlajpkdmockpc)
 
-##Google Tag Manager
+## Google Tag Manager
 
 [Analytics Pros - dataLayer Inspector+](https://chrome.google.com/webstore/detail/analytics-pros-datalayer/kmcbdogdandhihllalknlcjfpdjcleom)
 
@@ -43,13 +43,13 @@ Biased towards google products.
 
 [GTM Analyzer](https://chrome.google.com/webstore/detail/gtm-analyzer/ilnfchepijhkabokmioefeeoaidlifdp)
 
-## Multiple Tag Vendors
+##  Multiple Tag Vendors
 
 [WASP Analytics Profiler](https://chrome.google.com/webstore/detail/waspinspector-analytics-s/niaoghengfohplclhbjnjheodgkejpih)
 
 [Tealium Tools](https://chrome.google.com/webstore/detail/tealium-tools/gidnphnamcemailggkemcgclnjeeokaa)
 
-##Helpful
+## Helpful
 
 [Web Developer Form Filler](https://chrome.google.com/webstore/detail/web-developer-form-filler/gbagmkohmhcjgbepncmehejaljoclpil)
 
@@ -57,7 +57,7 @@ Biased towards google products.
 
 [Archie.AI Google Analytics](https://chrome.google.com/webstore/detail/archieai-google-analytics/dehldelopfcidgmfdbgaljofaemkkjcg)
 
-##Web resources
+## Web resources
 
 [Google Analytics Reporting API Query Explorer](https://ga-dev-tools.appspot.com/query-explorer/)
 
@@ -68,7 +68,6 @@ Biased towards google products.
 [Google Analytics UTM Builder](https://ga-dev-tools.appspot.com/campaign-url-builder/)
 
 [Google Analytics Enhanced Ecommerce Implementation with GTM](https://developers.google.com/tag-manager/enhanced-ecommerce)
-
 
 [Google Analytics Enhanced Ecommerce Demo Shop](https://enhancedecommerce.appspot.com/)
 
