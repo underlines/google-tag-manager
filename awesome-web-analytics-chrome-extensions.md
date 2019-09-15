@@ -1,4 +1,4 @@
-# Curated list of Web Analytics plugins.
+# Curated list of Web Analytics Chrome Extensions & some links
 Biased towards google products.
 
 ## Google Analytics
