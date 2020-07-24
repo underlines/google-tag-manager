@@ -27,6 +27,10 @@ Biased towards google products.
 
 [Analytics Pros - dataLayer Inspector+](https://chrome.google.com/webstore/detail/analytics-pros-datalayer/kmcbdogdandhihllalknlcjfpdjcleom)
 
+[Datahawk](https://chrome.google.com/webstore/detail/datahawk/mnkpjcgdlhenamhcbempiogjamdkbbgi)
+
+[Omnibug](https://chrome.google.com/webstore/detail/omnibug/bknpehncffejahipecakbfkomebjmokl)
+
 [Datalayer Checker](https://chrome.google.com/webstore/detail/datalayer-checker/ffljdddodmkedhkcjhpmdajhjdbkogke)
 
 [GTM Sonar](https://chrome.google.com/webstore/detail/gtm-sonar/iiihoahkpncaheicjfemhjkkfamcahcd)
