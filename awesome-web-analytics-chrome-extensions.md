@@ -19,6 +19,8 @@ Biased towards google products.
 
 [Google Analytics and Segment Helper by VICE](https://chrome.google.com/webstore/detail/google-analytics-and-segm/ppknjgihbmfcdmgdenblfomidfomhclp)
 
+[PII Viewer for Google Analytics](https://chrome.google.com/webstore/detail/pii-viewer-for-google-ana/kocaompbindpaanpabjeeechkofidmbh)
+
 ## Facebook
 
 [Facebook Pixel Helper](https://chrome.google.com/webstore/detail/facebook-pixel-helper/fdgfkebogiimcoedlicjlajpkdmockpc)
@@ -47,11 +49,19 @@ Biased towards google products.
 
 [GTM Analyzer](https://chrome.google.com/webstore/detail/gtm-analyzer/ilnfchepijhkabokmioefeeoaidlifdp)
 
+[Adswerve - dataLayer Inspector+](https://chrome.google.com/webstore/detail/adswerve-datalayer-inspec/kmcbdogdandhihllalknlcjfpdjcleom)
+
+[GTM Variable Builder](https://chrome.google.com/webstore/detail/gtm-variable-builder/feeboihdgpananoagfmbohoogoncndba)
+
 ##  Multiple Tag Vendors
 
 [WASP Analytics Profiler](https://chrome.google.com/webstore/detail/waspinspector-analytics-s/niaoghengfohplclhbjnjheodgkejpih)
 
 [Tealium Tools](https://chrome.google.com/webstore/detail/tealium-tools/gidnphnamcemailggkemcgclnjeeokaa)
+
+[Observepoint Tag Debugger](https://chrome.google.com/webstore/detail/observepoint-tag-debugger/daejfbkjipkgidckemjjafiomfeabemo)
+
+[XTag Tag Manager Google Analytics Validator](https://chrome.google.com/webstore/detail/xtag-google-analytics-rec/mhenhjfdnnhdfejcbhmpebenecffeolh)
 
 ## Helpful
 
