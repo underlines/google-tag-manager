@@ -49,10 +49,6 @@ Create the following new trigger:
 ## Tags
 Create the following tags:
 
-### GA - Pageview
-This is optional. If you want to send the gclid to Google Analytics as a custom dimension, you must set your default GA Pageview tag to have a lower tag priority, than the next tag `cHTML - create Cookie - gclid`.
-- Open your default GA Pageview tag > Advanced Settings > Tag firing priority > `1`
-
 ### cHTML - create Cookie - gclid
 - Tag Name: `cHTML - create Cookie - gclid`
 - Tag Type: `Custom HTML`
@@ -62,8 +58,16 @@ This is optional. If you want to send the gclid to Google Analytics as a custom 
   {{JS - Helper - Create Cookie}}('gclid', '{{URL Param - gclid}}', 15552000000, '/', undefined);
 </script>
 ```
-- Advanced Settings > Tag firing priority > `2` optional. Only set this, if you send gclid to Google Analytics as a custom dimension!
 - Firing Triggers: `Pageview - gclid set in url`
+
+### GA - Pageview
+This is optional. If you want to send the gclid to Google Analytics as a custom dimension, you must set your default GA Pageview tag to have a lower tag priority, than the next tag `cHTML - create Cookie - gclid`.
+
+Open Google Analytics > Admin > Under Property in the middle column > Custom Definitions > Custom Dimensions > New Custom Dimension > Name: `gclid`, Scope: `Session`, Active: `true`. Then go back to the Custom Dimensions and find out what Index number the Custom Dimension you've just created has. If you created the first one, it will be Index 1.
+
+- Open your default GA Pageview tag > Advanced Settings > Tag firing priority > `1`
+- Open your default GA settings variable > More Settings > Custom Dimensions > Add Custom Dimension > Index: `xxx` (change xxx to the Index number when you created a new Custom Dimension in GA), Dimension Value: `{{Cookie - gclid}}`
+- Open the tag you created before `cHTML - create Cookie - gclid` > Advanced Settings > Tag firing priority > `2`
 
 
 ### cHTML - form Submission - add clientId & gclid to hidden field
