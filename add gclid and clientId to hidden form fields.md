@@ -11,6 +11,8 @@ Create the following new variables
 - Variable Name: `Cookie - gclid`
 - Type: `1st-Party Cookie`
 - Cookie Name: `gclid`
+- Format Value: Convert null to... `(not set)` Convert undefined to... `(not set)`
+
 
 ### JS - Helper - Create Cookie
 - Variable Name: `JS - Helper - Create Cookie`
