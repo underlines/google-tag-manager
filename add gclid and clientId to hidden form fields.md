@@ -75,6 +75,8 @@ Open Google Analytics > Admin > Under Property in the middle column > Custom Def
 ### cHTML - form Submission - add clientId & gclid to hidden field
 - Tag Name: `cHTML - form Submission - add clientId & gclid to hidden field`
 - Tag Type: `Custom HTML`
+- Trigger: `All Pages` if you have many forms, or create a Pageview trigger of the path where your form is, or use
+- Advanced Settings > Tag Sequencing > Fire a tag before... > Set-up Tag > `Your default GA Pageview tag` (otherwise, the GA tracker object might load after this script, and the script wouldn't find the clientId
 - HTML:
 ```
 <script>
