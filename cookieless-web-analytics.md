@@ -1,4 +1,4 @@
-# Privacy First Analytics
+# Privacy First Web Analytics
 A curated list of cookie less / javascript less and server-side web anayltics tracking solutions
 
 ## Client side JS, no cookies:
