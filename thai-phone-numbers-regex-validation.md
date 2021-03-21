@@ -1,10 +1,10 @@
 
 # PHONE NUMBERS IN THAILAND AND THEIR REGEX VALIDATION
-BASED ON https://en.wikipedia.org/wiki/Telephone_numbers_in_Thailand
-AUTHOR: https://github.com/underlines/
-VERSION: 20200701-3
+* BASED ON https://en.wikipedia.org/wiki/Telephone_numbers_in_Thailand
+* AUTHOR: https://github.com/underlines/
+* VERSION: 20200701-3
 
-COMPLETE REGEX FOR ALL GROUPS:
+## COMPLETE REGEX FOR ALL GROUPS:
 ```
 ^02\d{6,7}$|^(03[2-9]|04[0-9]|05[0-6])\d{6}$|^07[3-7]\d{6}$|^0[6-9]\d\d{7}$
 ```
