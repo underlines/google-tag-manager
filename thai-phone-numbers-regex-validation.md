@@ -9,6 +9,7 @@
 ^02\d{6,7}$|^(03[2-9]|04[0-9]|05[0-6])\d{6}$|^07[3-7]\d{6}$|^0[6-9]\d\d{7}$
 ```
 # How to create the Regular Expression
+The above regex is compromised from the following parts, and simply combined with an OR pipe `|`
 ## LANDLINE, BANGKOK GROUP
 * SPECIFICATION: 02 + (6-7 digits)
 * REGEX: `^02\d{6,7}$`
