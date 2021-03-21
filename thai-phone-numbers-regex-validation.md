@@ -15,16 +15,20 @@ The above regex is compromised from the following parts, and simply combined wit
 * REGEX: `^02\d{6,7}$`
 ### TEST
 #### MATCH
-```02123456
-021234567```
+```
+02123456
+021234567
+```
 
 ### NO MATCH
-```(wrong area code)
+```
+(wrong area code)
 03123456
 (too long)
 0212345678
 (too short)
-0212345```
+0212345
+```
 
 ## LANDLINE, PROVINCES GROUP I
 * SPECIFICATION: 032-056 + (6 digits)
@@ -32,13 +36,17 @@ The above regex is compromised from the following parts, and simply combined wit
 
 ### TEST 
 #### MATCH
-```032123456
-056123456```
+```
+032123456
+056123456
+```
 
 #### NO MATCH
-````031123456 (wrong area code)
+```
+031123456 (wrong area code)
 03212345 (too short)
-0321234567 (too long)````
+0321234567 (too long)
+```
 
 ## LANDLINE, PROVINCES GROUP II
 * SPECIFICATION: 073-077 + (6 digits) Province Landline
@@ -46,13 +54,17 @@ The above regex is compromised from the following parts, and simply combined wit
 
 ### TEST
 #### MATCH
-```073123456
-077123456```
+```
+073123456
+077123456
+```
 
 #### NO MATCH
-```072123456 (wrong area code)
+```
+072123456 (wrong area code)
 07312345 (too short)
-0731234567 (too long)```
+0731234567 (too long)
+```
 
 
 ## MOBILE GROUP
@@ -61,12 +73,16 @@ The above regex is compromised from the following parts, and simply combined wit
 
 ### TEST
 #### MATCH
-```0601234567
-0991234567```
+```
+0601234567
+0991234567
+```
 
 #### NO MATCH
-```0591234567 (wrong area code)
+```
+0591234567 (wrong area code)
 1001234567 (wrong area code)
 099123456 (too short)
-09912345678 (too long)```
+09912345678 (too long)
+```
 
