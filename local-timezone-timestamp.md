@@ -30,10 +30,3 @@ dataLayer.push({
 * You can change the timezone by copying the *tz Database Name* in the column here: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 * If you want to change the custom format, have a look here: https://day.js.org/docs/en/display/format
 
-
-"\n default format: " + localTime +               //Unix Timestamp is always GMT/UTC, never local
-"\n Unix Timestamp: " + unixTimestamp.valueOf() + //Unix Timestamp is always GMT/UTC, never local
-"\n ISO8601 format: " + dayjs.utc().format() +    //GMT/UTC ISO8601 format
-"\n String format : " + localTime.toString() +    //GMT/UTC
-"\n ISO8601 format: " + localTime.format() +      //will show in local time
-"\n Custom format : " + localTime.format("YYYY-MM-DD_HH-mm-ss [Escape Y]") //see https://day.js.org/docs/en/display/format
